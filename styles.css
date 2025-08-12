@@ -8,8 +8,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-attachment: fixed;
+    background: #007D8C;  /* Azul turquesa oscuro */
     position: relative;
     overflow: hidden;
 }
@@ -41,13 +40,34 @@ body {
 }
 
 .hero-title {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
     animation: glow 2s ease-in-out infinite alternate;
+    font-size: 4rem;
+    margin-top: -50px;  /* Ajustar la posición vertical */
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Asegurarse de que los botones estén centrados */
+.hero-section .btn {
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 @keyframes glow {
-    from { text-shadow: 2px 2px 4px rgba(0,0,0,0.3), 0 0 10px rgba(255,255,255,0.2); }
-    to { text-shadow: 2px 2px 4px rgba(0,0,0,0.3), 0 0 20px rgba(255,255,255,0.4); }
+    from { 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3), 
+                     0 0 20px rgba(255,255,255,0.4),
+                     0 0 30px rgba(255,223,0,0.2);
+    }
+    to { 
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3), 
+                     0 0 30px rgba(255,255,255,0.6),
+                     0 0 40px rgba(255,223,0,0.4);
+    }
 }
 
 /* Botones con animaciones */
