@@ -92,14 +92,15 @@ body {
 .hover-card {
     transition: all 0.3s ease;
     border-radius: 15px;
-    background-color: #2c2c2c; /* Fondo oscuro para las tarjetas */
-    color: #e0e0e0; /* Texto claro en las tarjetas */
+    background-color: white;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .hover-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
-    background-color: #3a3a3a; /* Fondo más claro al pasar el mouse */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+    background-color: #ffffff;
 }
 
 /* Navbar personalizado */
